@@ -1,0 +1,30 @@
+#pragma once
+
+class Component;
+
+#include "GameObject.h"
+#include "Component.h"
+#include <string>
+#include <vector>
+#include <iostream>
+
+class ModularGameObject : public GameObject
+{
+private:
+    std::vector<Component*> componentList;
+    int moveDirection;
+    float moveSpeed;
+public:
+    ModularGameObject(std::string name, std::string texture, float size);
+    ~ModularGameObject();
+    void attachComponent(Component* component);
+    Component* getComponent(std::string componentName);
+    void listComponents();
+
+    int getMoveDirection();
+    void setMoveDirection(int dir);
+    float getMoveSpeed();
+    void setMoveSpeed(float speed);
+
+    void update(sf::Time deltaTime);
+};
