@@ -1,9 +1,13 @@
 #include "MarioBrosEngine.h"
 #include "SceneManager.h"
+#include "GameScene.h"
+#include "GameCharFactory.h"
 
 void MarioBrosEngine::init()
 {
     sceneMngr = SceneManager::createInstance();
+    sceneMngr->registerScene(new GameScene());
+    sceneMngr->loadScene("GameScene");
 }
 
 void MarioBrosEngine::update(sf::Time deltaTime)
@@ -23,12 +27,22 @@ SceneManager* MarioBrosEngine::getSceneManager()
 
 void MarioBrosEngine::keyPressTrigger(sf::Keyboard::Scan keyCode)
 {
-
+    SceneManager* sceneMngr = getSceneManager();
+    GameScene* game = dynamic_cast<GameScene*>(sceneMngr->getCurrentScene());
+    if(game != nullptr)
+    {
+        game->keyPressTrigger(keyCode);
+    }
 }
 
 void MarioBrosEngine::keyReleaseTrigger(sf::Keyboard::Scan keyCode)
 {
-    
+    SceneManager* sceneMngr = getSceneManager();
+    GameScene* game = dynamic_cast<GameScene*>(sceneMngr->getCurrentScene());
+    if(game != nullptr)
+    {
+        game->keyReleaseTrigger(keyCode);
+    }
 }
 
 void MarioBrosEngine::run(std::string title, unsigned int width, unsigned int height)
