@@ -15,7 +15,7 @@ void GameScene::onLoad()
         stage = 1;
         lives = 3;
 
-        ModularGameObject* player = GameCharFactory::makePlayer("player", 33, 32);
+        ModularGameObject* player = GameCharFactory::makePlayer("player", 66, 64);
         addObject(player);
 
         for(GameObject* obj : getAllObjects())
