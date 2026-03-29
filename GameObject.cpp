@@ -5,7 +5,16 @@ GameObject::GameObject(std::string name, std::string texture, float width, float
     , width{width}
     , height{height}
 {
+    GameResource* resource = GameResource::createInstance();
+    sf::IntRect rect = (*resource->getAtlas())[texture];
+    sprite = new sf::Sprite(*resource->getTexture(), rect);
 
+    sprite->setOrigin({rect.size.x/2.f, rect.size.y/2.f});
+    sprite->setScale({width/rect.size.x, height/rect.size.y});
+    sprite->move({width/2, height/2});
+
+    x = 0;
+    y = 0;
 }
 
 GameObject::GameObject(std::string name)

@@ -1,5 +1,6 @@
 #pragma once
 
+#include "GameResource.h"
 #include <SFML/Graphics.hpp>
 #include <string>
 #include <vector>
