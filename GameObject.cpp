@@ -8,6 +8,12 @@ GameObject::GameObject(std::string name, std::string texture, float width, float
 
 }
 
+GameObject::GameObject(std::string name)
+    : name{name}
+{
+    
+}
+
 GameObject::~GameObject()
 {
     delete sprite;

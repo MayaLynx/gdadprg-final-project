@@ -14,6 +14,7 @@ private:
 
 public:
     GameObject(std::string name, std::string texture, float width, float height);
+    GameObject(std::string name);
     ~GameObject();
     std::string getName();
     sf::Sprite* getSprite();
