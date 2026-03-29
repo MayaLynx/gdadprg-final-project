@@ -11,6 +11,12 @@ GameData* GameData::createInstance()
     return myInstance;
 }
 
+GameData::GameData()
+{
+    this->level = 1;
+    this->lives = 3;
+};
+
 int GameData::getLevel()
 {
     return level;
