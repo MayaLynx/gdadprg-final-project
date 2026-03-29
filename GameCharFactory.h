@@ -1,3 +1,14 @@
 #pragma once
 
+#include "GameObject.h"
 #include "ModularGameObject.h"
+#include "Component.h"
+#include "MoveComp.h"
+
+class GameCharFactory
+{
+public:
+    static ModularGameObject* makePlayer(std::string name, float width, float height);
+    static ModularGameObject* makeEnemy(std::string name, float width, float height);
+    static GameObject* makeBlock(std::string name, float width, float height);
+};
