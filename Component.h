@@ -1,6 +1,6 @@
 #pragma once
 
-class GameObject;
+class ModularGameObject;
 
 #include "ModularGameObject.h"
 #include <string>
