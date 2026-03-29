@@ -13,7 +13,8 @@
 
 int main()
 {
-    
+    MarioBrosEngine game;
+    game.run("Test", 500, 500);
 
     return 0;
 }
