@@ -7,8 +7,8 @@
 class MoveComp : public Component
 {
 private:
-    enum Direction{LEFT, RIGHT};
+    enum Direction{STOPPED, LEFT, RIGHT};
 public:
-    MoveComp(float moveSpeed);
+    MoveComp();
     void perform(sf::Time deltaTime) override;
 };

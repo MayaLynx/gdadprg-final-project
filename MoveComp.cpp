@@ -1,6 +1,6 @@
 #include "MoveComp.h"
 
-MoveComp::MoveComp(float moveSpeed)
+MoveComp::MoveComp()
     : Component("MoveComp")
 {
     
