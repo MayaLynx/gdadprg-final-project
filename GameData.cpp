@@ -13,18 +13,18 @@ GameData* GameData::createInstance()
 
 GameData::GameData()
 {
-    this->level = 1;
+    this->stage = 1;
     this->lives = 3;
 };
 
-int GameData::getLevel()
+int GameData::getStage()
 {
-    return level;
+    return stage;
 }
 
-void GameData::setLevel(int val)
+void GameData::setStage(int val)
 {
-    level = val;
+    stage = val;
 }
 
 int GameData::getLives()

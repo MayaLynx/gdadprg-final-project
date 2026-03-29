@@ -8,8 +8,8 @@ class GameData
 {
 public:
     static GameData* createInstance();
-    int getLevel();
-    void setLevel(int val);
+    int getStage();
+    void setStage(int val);
     int getLives();
     void setLives(int val);
 
@@ -18,7 +18,7 @@ public:
     std::vector<GameObject*> getSnapshot();
 private:
     static GameData* myInstance;
-    int level;
+    int stage;
     int lives;
     std::vector<GameObject*> snapshot;
     GameData();
