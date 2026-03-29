@@ -15,7 +15,7 @@ private:
     int moveDirection;
     float moveSpeed;
 public:
-    ModularGameObject(std::string name, std::string texture, float size);
+    ModularGameObject(std::string name, std::string texture, float width, float height);
     ~ModularGameObject();
     void attachComponent(Component* component);
     Component* getComponent(std::string componentName);

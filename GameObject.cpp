@@ -1,8 +1,9 @@
 #include "GameObject.h"
 
-GameObject::GameObject(std::string name, std::string texture, float size)
+GameObject::GameObject(std::string name, std::string texture, float width, float height)
     : name{name}
-    , sideSize{size}
+    , width{width}
+    , height{height}
 {
 
 }
@@ -30,7 +31,7 @@ void GameObject::setPosition(int newX, int newY)
     x = newX;
     y = newY;
 
-    sprite->setPosition({sideSize*(x+0.5f), sideSize*(y+0.5f)});
+    sprite->setPosition({width*(x+0.5f), height*(y+0.5f)});
 }
 
 int GameObject::getXPos()

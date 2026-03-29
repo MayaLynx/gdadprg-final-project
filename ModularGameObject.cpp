@@ -1,7 +1,7 @@
 #include "ModularGameObject.h"
 
-ModularGameObject::ModularGameObject(std::string name, std::string texture, float size)
-    : GameObject(name, texture, size)
+ModularGameObject::ModularGameObject(std::string name, std::string texture, float width, float height)
+    : GameObject(name, texture, width, height)
 {
     
 }

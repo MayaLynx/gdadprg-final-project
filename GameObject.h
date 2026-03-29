@@ -10,10 +10,10 @@ private:
     std::string name;
     sf::Sprite* sprite;
     int x, y;
-    float sideSize;
+    float width, height;
 
 public:
-    GameObject(std::string name, std::string texture, float size);
+    GameObject(std::string name, std::string texture, float width, float height);
     ~GameObject();
     std::string getName();
     sf::Sprite* getSprite();
