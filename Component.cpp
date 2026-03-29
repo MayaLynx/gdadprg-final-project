@@ -22,33 +22,6 @@ std::string Component::getName()
 }
 
 //////////// COMPONENTS ////////////
-// Movement component //
-class MoveComp : public Component
-{
-private:
-    enum Direction{LEFT, RIGHT};
-public:
-    MoveComp(float moveSpeed)
-        : Component("MoveComp")
-    {};
-
-    void perform(sf::Time deltaTime) override
-    {
-        ModularGameObject* entity = getOwner();
-        float moveSpeed = entity->getMoveSpeed();
-        switch(entity->getMoveDirection())
-        {
-            case LEFT:
-                entity->getSprite()->move({-moveSpeed, 0.f});
-                break;
-            
-            case RIGHT:
-                entity->getSprite()->move({moveSpeed, 0.f});
-                break;
-        }
-    }
-};
-
 // Jump component //
 class JumpComp : public Component
 {
