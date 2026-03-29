@@ -3,9 +3,9 @@
 GameResource* GameResource::myInstance = nullptr;
 
 GameResource::GameResource(){
-    if(texture.loadFromFile("")
-            && font.openFromFile("Silver.ttf") ){
-        atlas = createDictionary("");
+    if(texture.loadFromFile("Assets\\platformer_assets.png")
+            && font.openFromFile("Assets\\Silver.ttf") ){
+        atlas = createDictionary("Assets\\platformer_atlas.atlas");
 	}
 }
 
