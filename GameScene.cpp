@@ -23,7 +23,7 @@ void GameScene::onLoad()
         stage = 1;
         lives = 3;
 
-        ModularGameObject* player = GameCharFactory::makePlayer("player", 66, 64);
+        ModularGameObject* player = GameCharFactory::makePlayer("player", 33, 32);
         addObject(player);
 
        
@@ -109,10 +109,17 @@ void GameScene::keyPressTrigger(sf::Keyboard::Scan keyCode)
         player->setMoveDirection(RIGHT);
     }
     else if(keyCode == sf::Keyboard::Scan::Space ||
+            keyCode == sf::Keyboard::Scan::Z ||
             keyCode == sf::Keyboard::Scan::Up)
     {
         // Request a jump instead of directly changing position here.
         player->requestJump();
+    }
+
+    // Ability to run when held down
+    if(keyCode == sf::Keyboard::Scan::X)
+    {
+        player->setMoveSpeed(4.0);
     }
 }
 
@@ -127,6 +134,12 @@ void GameScene::keyReleaseTrigger(sf::Keyboard::Scan keyCode)
        keyCode == sf::Keyboard::Scan::Right)
     {
         player->setMoveDirection(STOPPED);
+    }
+
+    // Player speed returns to normal when released
+    if(keyCode == sf::Keyboard::Scan::X)
+    {
+        player->setMoveSpeed(2.0);
     }
 }
 
