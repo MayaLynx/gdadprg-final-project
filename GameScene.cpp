@@ -130,15 +130,19 @@ void GameScene::keyPressTrigger(sf::Keyboard::Scan keyCode)
             keyCode == sf::Keyboard::Scan::Z ||
             keyCode == sf::Keyboard::Scan::Up)
     {
+        // Only play jump SFX when the player is actually able to jump.
+        if(player->isGrounded())
+        {
+            jumpSFX->play();
+        }
         // Request a jump instead of directly changing position here.
         player->requestJump();
-        jumpSFX->play();
     }
 
     // Ability to run when held down
     if(keyCode == sf::Keyboard::Scan::X)
     {
-        player->setMoveSpeed(4.0);
+        player->setMoveSpeed(5.0);
     }
 }
 
@@ -158,7 +162,7 @@ void GameScene::keyReleaseTrigger(sf::Keyboard::Scan keyCode)
     // Player speed returns to normal when released
     if(keyCode == sf::Keyboard::Scan::X)
     {
-        player->setMoveSpeed(2.0);
+        player->setMoveSpeed(3.0);
     }
 }
 
@@ -184,14 +188,20 @@ void GameScene::buildSimpleStage()
     GameObject* block1 = GameCharFactory::makeBlock("plat1", 8, 9, 35, 35);
     GameObject* block2 = GameCharFactory::makeBlock("plat2", 9, 9, 35, 35);
     GameObject* block3 = GameCharFactory::makeBlock("plat3", 14, 7, 35, 35);
+    GameObject* block4 = GameCharFactory::makeBlock("plat4", 15, 7, 35, 35);
+    GameObject* block5 = GameCharFactory::makeBlock("plat5", 16, 7, 35, 35);
 
     addObject(block1);
     addObject(block2);
     addObject(block3);
+    addObject(block4);
+    addObject(block5);
 
     solidBlocks.push_back(block1);
     solidBlocks.push_back(block2);
     solidBlocks.push_back(block3);
+    solidBlocks.push_back(block4);
+    solidBlocks.push_back(block5);
 }
 
 void GameScene::handleCollisions(ModularGameObject* player)
