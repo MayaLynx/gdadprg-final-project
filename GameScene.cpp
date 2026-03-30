@@ -2,7 +2,7 @@
 
 GameScene::GameScene() : Scene("GameScene")
 {
-    if(jumpSFX_buffer.loadFromFile("C:\\Users\\Maya\\Documents\\Programming\\C++\\GDADPRG\\Final_Project\\Assets\\jump.wav"))
+    if(jumpSFX_buffer.loadFromFile("Assets\\jump.wav"))
     {
         jumpSFX = new sf::Sound(jumpSFX_buffer);
         jumpSFX->setVolume(30.f);
