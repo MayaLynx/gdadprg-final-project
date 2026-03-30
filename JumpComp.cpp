@@ -13,7 +13,7 @@ void JumpComp::perform(sf::Time deltaTime)
     // only jump if jump was requested and player is on the ground.
     if(entity->consumeJumpRequest() && entity->isGrounded())
     {
-        entity->setVerticalVelocity(-500.f);
+        entity->setVerticalVelocity(-jumpStrength);
         entity->setGrounded(false);
     }
 }
