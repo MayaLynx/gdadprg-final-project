@@ -4,6 +4,7 @@
 #include "SceneManager.h"
 #include "GameData.h"
 #include "GameCharFactory.h"
+#include "Background.h"
 #include <vector>
 #include <algorithm>
 
