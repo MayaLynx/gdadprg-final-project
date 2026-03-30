@@ -14,7 +14,7 @@
 int main()
 {
     MarioBrosEngine game;
-    game.run("Test", 500, 500);
+    game.run("Test", game.getWindowWidth(), game.getWindowHeight());
 
     return 0;
 }

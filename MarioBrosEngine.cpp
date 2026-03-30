@@ -25,6 +25,16 @@ SceneManager* MarioBrosEngine::getSceneManager()
     return sceneMngr;
 }
 
+int MarioBrosEngine::getWindowWidth()
+{
+    return windowWidth;
+}
+
+int MarioBrosEngine::getWindowHeight()
+{
+    return windowHeight;
+}
+
 void MarioBrosEngine::keyPressTrigger(sf::Keyboard::Scan keyCode)
 {
     SceneManager* sceneMngr = getSceneManager();

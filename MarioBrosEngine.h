@@ -9,6 +9,8 @@ private:
         sf::RenderWindow window;
         const sf::Time TimePerFrame = sf::seconds(1.0f / 60.0f);
         SceneManager* sceneMngr;
+        int windowWidth = 500;
+        int windowHeight = 500;
 public:
         void init();
         void update(sf::Time deltaTime);
@@ -17,4 +19,6 @@ public:
         void keyReleaseTrigger(sf::Keyboard::Scan keyCode);
         void run(std::string title, unsigned int width, unsigned int height);
         SceneManager* getSceneManager();
+        int getWindowWidth();
+        int getWindowHeight();
 };
