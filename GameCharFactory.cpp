@@ -9,3 +9,11 @@ ModularGameObject* GameCharFactory::makePlayer(std::string name, float width, fl
 
     return player;
 }
+
+GameObject* GameCharFactory::makeBlock(std::string name, int xPos, int yPos, float width, float height)
+{
+    GameObject* block = new GameObject(name, "block", width, height);
+    block->setPosition(xPos, yPos);
+
+    return block;
+}
