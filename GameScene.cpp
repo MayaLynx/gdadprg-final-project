@@ -23,9 +23,14 @@ void GameScene::onLoad()
         stage = 1;
         lives = 3;
 
+        GameObject* game_bg = new Background("game_bg", "background", stageWidth, 500.f);
+        addObject(game_bg);
+
         ModularGameObject* player = GameCharFactory::makePlayer("player", 33, 32);
         addObject(player);
 
+        ModularGameObject* enemy = GameCharFactory::makeEnemy("opossum", 25, 4, 36, 28);
+        addObject(enemy);
        
         // Builsd a simple block-based stage for testing collision and jump.
         buildSimpleStage();
@@ -72,6 +77,7 @@ void GameScene::onUnload()
 void GameScene::update(sf::Time deltaTime)
 {
     ModularGameObject* player = (ModularGameObject*)findObject("player");
+    ModularGameObject* enemy = (ModularGameObject*)findObject("opossum");
 
     if(player == nullptr)
         return;
@@ -82,6 +88,12 @@ void GameScene::update(sf::Time deltaTime)
     // After components move the sprite, fix block overlaps and then updates camera.
     handleCollisions(player);
     updateCamera(player);
+
+    // Test enemy
+    if(enemy == nullptr)
+        return;
+    enemy->update(deltaTime);
+    handleCollisions(enemy);
 }
 
 void GameScene::draw(sf::RenderWindow* window)
@@ -157,14 +169,14 @@ void GameScene::buildSimpleStage()
     // Build a basic floor and a few platforms so jump/gravity/collision can be tested.
     for(int i = 0; i < 40; i++)
     {
-        GameObject* block = GameCharFactory::makeBlock("floor" + std::to_string(i), i, 6, 66, 64);
+        GameObject* block = GameCharFactory::makeBlock("floor" + std::to_string(i), i, 10, 35, 35);
         addObject(block);
         solidBlocks.push_back(block);
     }
 
-    GameObject* block1 = GameCharFactory::makeBlock("plat1", 8, 5, 66, 64);
-    GameObject* block2 = GameCharFactory::makeBlock("plat2", 9, 5, 66, 64);
-    GameObject* block3 = GameCharFactory::makeBlock("plat3", 14, 4, 66, 64);
+    GameObject* block1 = GameCharFactory::makeBlock("plat1", 8, 9, 35, 35);
+    GameObject* block2 = GameCharFactory::makeBlock("plat2", 9, 9, 35, 35);
+    GameObject* block3 = GameCharFactory::makeBlock("plat3", 14, 7, 35, 35);
 
     addObject(block1);
     addObject(block2);
