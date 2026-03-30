@@ -81,6 +81,11 @@ bool ModularGameObject::consumeJumpRequest()
 
 //until here
 
+void ModularGameObject::init()
+{
+    
+}
+
 void ModularGameObject::update(sf::Time deltaTime)
 {
     for(Component* cmp : componentList)

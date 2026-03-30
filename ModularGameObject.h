@@ -41,5 +41,6 @@ public:
     void requestJump();
     bool consumeJumpRequest();
 
+    void init();
     void update(sf::Time deltaTime);
 };
