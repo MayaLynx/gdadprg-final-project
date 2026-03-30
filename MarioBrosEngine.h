@@ -1,6 +1,10 @@
 #pragma once
 
 #include "SceneManager.h"
+#include "SceneManager.h"
+#include "GameScene.h"
+#include "PauseMenuScene.h"
+#include "GameCharFactory.h"
 #include <SFML/Graphics.hpp>
 
 class MarioBrosEngine

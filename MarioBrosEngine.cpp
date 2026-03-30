@@ -1,12 +1,11 @@
 #include "MarioBrosEngine.h"
-#include "SceneManager.h"
-#include "GameScene.h"
-#include "GameCharFactory.h"
+
 
 void MarioBrosEngine::init()
 {
     sceneMngr = SceneManager::createInstance();
     sceneMngr->registerScene(new GameScene());
+    sceneMngr->registerScene(new PauseMenuScene());
     sceneMngr->loadScene("GameScene");
 }
 
@@ -43,6 +42,12 @@ void MarioBrosEngine::keyPressTrigger(sf::Keyboard::Scan keyCode)
     {
         game->keyPressTrigger(keyCode);
     }
+
+    PauseMenuScene* pauseMenu = dynamic_cast<PauseMenuScene*>(sceneMngr->getCurrentScene());
+    if(pauseMenu != nullptr)
+    {
+        pauseMenu->keyPressTrigger(keyCode);
+    }
 }
 
 void MarioBrosEngine::keyReleaseTrigger(sf::Keyboard::Scan keyCode)
@@ -52,6 +57,12 @@ void MarioBrosEngine::keyReleaseTrigger(sf::Keyboard::Scan keyCode)
     if(game != nullptr)
     {
         game->keyReleaseTrigger(keyCode);
+    }
+
+    PauseMenuScene* pauseMenu = dynamic_cast<PauseMenuScene*>(sceneMngr->getCurrentScene());
+    if(pauseMenu != nullptr)
+    {
+        pauseMenu->keyReleaseTrigger(keyCode);
     }
 }
 
