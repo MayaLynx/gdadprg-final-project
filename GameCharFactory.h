@@ -9,6 +9,6 @@ class GameCharFactory
 {
 public:
     static ModularGameObject* makePlayer(std::string name, float width, float height);
-    static ModularGameObject* makeEnemy(std::string name, float width, float height);
+    static ModularGameObject* makeEnemy(std::string name, int xPos, int yPos, float width, float height);
     static GameObject* makeBlock(std::string name, int xPos, int yPos, float width, float height);
 };
