@@ -24,6 +24,12 @@ public:
     int getXPos();
     int getYPos();
 
+    // Added only as helpers for collision/camera.
+
+    sf::FloatRect getBounds();
+    sf::Vector2f getWorldPosition();
+    void setWorldPosition(float newX, float newY);
+
     void init();
     void update(sf::Time deltaTime);
     void draw(sf::RenderWindow *window);
