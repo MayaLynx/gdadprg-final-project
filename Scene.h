@@ -3,6 +3,7 @@
 #include "GameObject.h"
 #include "ModularGameObject.h"
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 #include <vector>
 #include <algorithm>
 
