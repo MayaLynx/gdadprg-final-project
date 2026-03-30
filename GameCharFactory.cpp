@@ -14,7 +14,7 @@ ModularGameObject* GameCharFactory::makePlayer(std::string name, float width, fl
     player->attachComponent(new JumpComp(600.f));
     player->attachComponent(new GravityComp(1200.f, 700.f));
 
-    player->setMoveSpeed(2.0f);
+    player->setMoveSpeed(3.0f);
     player->setPosition(3, 8);
 
  
