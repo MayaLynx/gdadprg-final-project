@@ -144,6 +144,12 @@ void GameScene::keyPressTrigger(sf::Keyboard::Scan keyCode)
     {
         player->setMoveSpeed(5.0);
     }
+
+    if(keyCode == sf::Keyboard::Scan::Escape)
+    {
+        SceneManager* sceneMngr = SceneManager::createInstance();
+        sceneMngr->loadScene("PauseMenuScene");
+    }
 }
 
 void GameScene::keyReleaseTrigger(sf::Keyboard::Scan keyCode)
@@ -178,7 +184,7 @@ void GameScene::buildSimpleStage()
 {
     // FOR TESTING
     // Build a basic floor and a few platforms so jump/gravity/collision can be tested.
-    for(int i = 0; i < 40; i++)
+    for(int i = 0; i < 76; i++)
     {
         GameObject* block = GameCharFactory::makeBlock("floor" + std::to_string(i), i, 10, 35, 35);
         addObject(block);
