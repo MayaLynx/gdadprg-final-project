@@ -2,6 +2,12 @@
 
 GameScene::GameScene() : Scene("GameScene")
 {
+    if(jumpSFX_buffer.loadFromFile("C:\\Users\\Maya\\Documents\\Programming\\C++\\GDADPRG\\Final_Project\\Assets\\jump.wav"))
+    {
+        jumpSFX = new sf::Sound(jumpSFX_buffer);
+        jumpSFX->setVolume(30.f);
+    }
+
 }
 
 void GameScene::onLoad()
@@ -126,6 +132,7 @@ void GameScene::keyPressTrigger(sf::Keyboard::Scan keyCode)
     {
         // Request a jump instead of directly changing position here.
         player->requestJump();
+        jumpSFX->play();
     }
 
     // Ability to run when held down
