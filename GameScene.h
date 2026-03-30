@@ -13,6 +13,8 @@ class GameScene : public Scene
 private:
     int lives, stage;
     enum Direction{STOPPED, LEFT, RIGHT};
+    sf::SoundBuffer jumpSFX_buffer;
+    sf::Sound *jumpSFX;
 
     
     // Added these for simple collision handling and camera follow.
