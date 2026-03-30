@@ -20,7 +20,11 @@ GameObject::GameObject(std::string name, std::string texture, float width, float
 GameObject::GameObject(std::string name)
     : name{name}
 {
-    
+    sprite = nullptr;
+    x = 0;
+    y = 0;
+    width = 0.f;
+    height = 0.f;
 }
 
 GameObject::~GameObject()
@@ -46,7 +50,8 @@ void GameObject::setPosition(int newX, int newY)
     x = newX;
     y = newY;
 
-    sprite->setPosition({width*(x+0.5f), height*(y+0.5f)});
+    if(sprite != nullptr)
+        sprite->setPosition({width*(x+0.5f), height*(y+0.5f)});
 }
 
 int GameObject::getXPos()
@@ -59,9 +64,41 @@ int GameObject::getYPos()
     return y;
 }
 
+sf::FloatRect GameObject::getBounds()
+{
+    // This gives the real rectangle of the sprite in the game.
+    // I added this because MoveComp already moves the sprite directly,so collision should also use the sprite's actual bounds.
+ 
+
+
+    if(sprite != nullptr)
+        return sprite->getGlobalBounds();
+
+    return sf::FloatRect();
+}
+
+sf::Vector2f GameObject::getWorldPosition()
+{
+    // Returns the sprite's actual position in the world.
+    // Useful for camera follow.
+    if(sprite != nullptr)
+        return sprite->getPosition();
+
+    return sf::Vector2f(0.f, 0.f);
+}
+
+void GameObject::setWorldPosition(float newX, float newY)
+{
+    // Lets collision correction place the object using exact pixel values.
+    // Didbt change setPosition(int,int) grid setup
+    if(sprite != nullptr)
+        sprite->setPosition({newX, newY});
+}
+
 void GameObject::update(sf::Time deltaTime){}
 
 void GameObject::draw(sf::RenderWindow *window)
 {
-    window->draw(*sprite);
+    if(sprite != nullptr)
+        window->draw(*sprite);
 }

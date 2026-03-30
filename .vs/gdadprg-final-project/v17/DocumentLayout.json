@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameScene.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GameScene.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameScene.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GameScene.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameCharFactory.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GameCharFactory.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GravityComp.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GravityComp.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enzo\\Source\\Repos\\gdadprg-final-project\\GravityComp.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GravityComp.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\JumpComp.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:JumpComp.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\JumpComp.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:JumpComp.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\ModularGameObject.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ModularGameObject.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\ModularGameObject.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ModularGameObject.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameObject.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GameObject.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameObject.h||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GameObject.h||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\AtlasParserM.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AtlasParserM.cpp||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameScene.cpp",
+              "DocumentMoniker": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameScene.cpp",
+              "RelativeDocumentMoniker": "GameScene.cpp",
+              "ToolTip": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameScene.cpp",
+              "RelativeToolTip": "GameScene.cpp",
+              "ViewState": "AgIAALcAAAAAAAAAAAAAAOUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-30T14:45:25.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameScene.h",
+              "DocumentMoniker": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameScene.h",
+              "RelativeDocumentMoniker": "GameScene.h",
+              "ToolTip": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameScene.h",
+              "RelativeToolTip": "GameScene.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-30T14:44:55.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameCharFactory.cpp",
+              "DocumentMoniker": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameCharFactory.cpp",
+              "RelativeDocumentMoniker": "GameCharFactory.cpp",
+              "ToolTip": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameCharFactory.cpp",
+              "RelativeToolTip": "GameCharFactory.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-30T14:38:36.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GravityComp.cpp",
+              "DocumentMoniker": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GravityComp.cpp",
+              "RelativeDocumentMoniker": "GravityComp.cpp",
+              "ToolTip": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GravityComp.cpp",
+              "RelativeToolTip": "GravityComp.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-30T14:30:35.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GravityComp.h",
+              "DocumentMoniker": "C:\\Users\\Enzo\\Source\\Repos\\gdadprg-final-project\\GravityComp.h",
+              "RelativeDocumentMoniker": "GravityComp.h",
+              "ToolTip": "C:\\Users\\Enzo\\Source\\Repos\\gdadprg-final-project\\GravityComp.h",
+              "RelativeToolTip": "GravityComp.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-30T14:28:17.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JumpComp.cpp",
+              "DocumentMoniker": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\JumpComp.cpp",
+              "RelativeDocumentMoniker": "JumpComp.cpp",
+              "ToolTip": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\JumpComp.cpp",
+              "RelativeToolTip": "JumpComp.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-30T14:25:22.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JumpComp.h",
+              "DocumentMoniker": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\JumpComp.h",
+              "RelativeDocumentMoniker": "JumpComp.h",
+              "ToolTip": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\JumpComp.h",
+              "RelativeToolTip": "JumpComp.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-30T14:24:55.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ModularGameObject.cpp",
+              "DocumentMoniker": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\ModularGameObject.cpp",
+              "RelativeDocumentMoniker": "ModularGameObject.cpp",
+              "ToolTip": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\ModularGameObject.cpp",
+              "RelativeToolTip": "ModularGameObject.cpp",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-30T14:23:38.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ModularGameObject.h",
+              "DocumentMoniker": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\ModularGameObject.h",
+              "RelativeDocumentMoniker": "ModularGameObject.h",
+              "ToolTip": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\ModularGameObject.h",
+              "RelativeToolTip": "ModularGameObject.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-30T14:23:13.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameObject.h",
+              "DocumentMoniker": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameObject.h",
+              "RelativeDocumentMoniker": "GameObject.h",
+              "ToolTip": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameObject.h",
+              "RelativeToolTip": "GameObject.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-30T14:11:43.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameObject.cpp",
+              "DocumentMoniker": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameObject.cpp",
+              "RelativeDocumentMoniker": "GameObject.cpp",
+              "ToolTip": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\GameObject.cpp",
+              "RelativeToolTip": "GameObject.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-30T14:07:25.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AtlasParserM.cpp",
+              "DocumentMoniker": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\AtlasParserM.cpp",
+              "RelativeDocumentMoniker": "AtlasParserM.cpp",
+              "ToolTip": "C:\\Users\\Enzo\\source\\repos\\gdadprg-final-project\\AtlasParserM.cpp",
+              "RelativeToolTip": "AtlasParserM.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-30T13:55:28.867Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

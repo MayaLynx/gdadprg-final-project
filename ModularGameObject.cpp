@@ -3,7 +3,12 @@
 ModularGameObject::ModularGameObject(std::string name, std::string texture, float width, float height)
     : GameObject(name, texture, width, height)
 {
-    
+    moveDirection = 0;
+    moveSpeed = 0.f;
+
+    verticalVelocity = 0.f;
+    grounded = false;
+    jumpRequested = false;
 }
 
 ModularGameObject::~ModularGameObject()
@@ -39,6 +44,42 @@ void ModularGameObject::setMoveSpeed(float speed)
 {
     moveSpeed = speed;
 }
+
+//Enzo changes
+
+float ModularGameObject::getVerticalVelocity()
+{
+    return verticalVelocity;
+}
+
+void ModularGameObject::setVerticalVelocity(float value)
+{
+    verticalVelocity = value;
+}
+
+bool ModularGameObject::isGrounded()
+{
+    return grounded;
+}
+
+void ModularGameObject::setGrounded(bool value)
+{
+    grounded = value;
+}
+
+void ModularGameObject::requestJump()
+{
+    jumpRequested = true;
+}
+
+bool ModularGameObject::consumeJumpRequest()
+{
+    bool result = jumpRequested;
+    jumpRequested = false;
+    return result;
+}
+
+//until here
 
 void ModularGameObject::update(sf::Time deltaTime)
 {
