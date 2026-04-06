@@ -1,8 +1,7 @@
-Game Title: GDADPRG Platformer
+Game Title: GDADPRG MarioLike Fox
 Group Members:
-- Replace with member name 1
-- Replace with member name 2
-- Replace with member name 3 (if any)
+-Christian Olay
+-Enzo Liberato
 
 Controls:
 - A / Left Arrow: Move left
@@ -10,6 +9,4 @@ Controls:
 - W / Up Arrow / Space / Z: Jump / Select
 - Esc: Pause
 
-Notes:
-- Replace this template with your final README.TXT before submission.
-- Add the final public source link and the group's actual names.
+https://github.com/MayaLynx/gdadprg-final-project/
