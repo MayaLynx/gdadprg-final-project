@@ -30,7 +30,7 @@ public:
     sf::Vector2f getWorldPosition();
     void setWorldPosition(float newX, float newY);
 
-    virtual void init();
+    void init();
     void update(sf::Time deltaTime);
     void draw(sf::RenderWindow *window);
 };

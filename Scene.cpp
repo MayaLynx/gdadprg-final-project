@@ -6,6 +6,7 @@ Scene::Scene(std::string name)
 
 Scene::~Scene()
 {
+    // The scene owns the objects currently inside it.
     for(GameObject* obj : objects)
     {
         delete obj;
@@ -19,6 +20,7 @@ std::string Scene::getName()
 
 void Scene::update(sf::Time deltaTime)
 {
+    // This just updates every object currently inside the scene.
     for(GameObject* obj : objects)
     {
         obj->update(deltaTime);
@@ -27,6 +29,7 @@ void Scene::update(sf::Time deltaTime)
 
 void Scene::draw(sf::RenderWindow* window)
 {
+    // This draws every object currently inside the scene.
     for(GameObject* obj : objects)
     {
         obj->draw(window);
@@ -68,5 +71,6 @@ void Scene::removeObject(GameObject *obj)
 
 void Scene::removeAllObjects()
 {
+    // This only clears the list.
     objects.clear();
 }

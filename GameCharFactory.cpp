@@ -5,44 +5,37 @@
 
 ModularGameObject* GameCharFactory::makePlayer(std::string name, float width, float height)
 {
+    // This builds the player in one place so the scenes do not keep repeating the same setup.
     ModularGameObject* player = new ModularGameObject(name, "idle/player-idle-1", width, height);
 
     player->attachComponent(new MoveComp());
+    player->attachComponent(new JumpComp(820.f));
+    player->attachComponent(new GravityComp(1700.f, 950.f));
 
-  
-    // Added the jump and gravity components to the player.
-    player->attachComponent(new JumpComp(600.f));
-    player->attachComponent(new GravityComp(1200.f, 700.f));
-
-    player->setMoveSpeed(3.0f);
-    player->setPosition(3, 8);
-
- 
-    // Player starts ungrounded until collision detects a floor/platform.
+    // Move speed is time-based now, so this value is in pixels per second.
+    player->setMoveSpeed(240.f);
     player->setGrounded(false);
 
     return player;
 }
 
-ModularGameObject* GameCharFactory::makeEnemy(std::string name, int xPos, int yPos, float width, float height)
-{
-    ModularGameObject* enemy = new ModularGameObject(name, name + "-1", width, height);
-
-    enemy->attachComponent(new JumpComp(500.f));
-    enemy->attachComponent(new GravityComp(1200.f, 700.f));
-
-    enemy->setMoveSpeed(2.0f);
-    enemy->setMoveDirection(1);
-    enemy->setPosition(xPos, yPos);
-    enemy->setGrounded(false);
-
-    return enemy;
-}
-
 GameObject* GameCharFactory::makeBlock(std::string name, int xPos, int yPos, float width, float height)
 {
-    GameObject* block = new GameObject(name, "block", width, height);
+    GameObject* block = new GameObject(name, "block-big", width, height);
     block->setPosition(xPos, yPos);
-
     return block;
+}
+
+GameObject* GameCharFactory::makeGoal(std::string name, int xPos, int yPos, float width, float height)
+{
+    GameObject* goal = new GameObject(name, "door-opened", width, height);
+    goal->setPosition(xPos, yPos);
+    return goal;
+}
+
+GameObject* GameCharFactory::makeCollectible(std::string name, int xPos, int yPos, float width, float height)
+{
+    GameObject* collectible = new GameObject(name, "shrooms", width, height);
+    collectible->setPosition(xPos, yPos);
+    return collectible;
 }

@@ -6,6 +6,7 @@ ModularGameObject::ModularGameObject(std::string name, std::string texture, floa
     moveDirection = 0;
     moveSpeed = 0.f;
 
+    // These are the extra values used by the movement, jump, and gravity components.
     verticalVelocity = 0.f;
     grounded = false;
     jumpRequested = false;
@@ -13,6 +14,7 @@ ModularGameObject::ModularGameObject(std::string name, std::string texture, floa
 
 ModularGameObject::~ModularGameObject()
 {
+    // This object owns its components, so it deletes them here.
     for(Component* cmp : componentList)
     {
         delete cmp;
@@ -21,6 +23,8 @@ ModularGameObject::~ModularGameObject()
 
 void ModularGameObject::attachComponent(Component* component)
 {
+    // This attaches a component to the object.
+    // So behavior gets added piece by piece instead of being hardcoded in one class.
     componentList.push_back(component);
     component->attachOwner(this);
 }
@@ -69,6 +73,8 @@ void ModularGameObject::setGrounded(bool value)
 
 void ModularGameObject::requestJump()
 {
+    // I separated the jump request from the actual jump itself.
+    // So input asks for it first, then JumpComp decides if it is valid.
     jumpRequested = true;
 }
 
@@ -81,13 +87,9 @@ bool ModularGameObject::consumeJumpRequest()
 
 //until here
 
-void ModularGameObject::init()
-{
-    
-}
-
 void ModularGameObject::update(sf::Time deltaTime)
 {
+    // This lets every attached component do its own job each frame.
     for(Component* cmp : componentList)
     {
         cmp->perform(deltaTime);

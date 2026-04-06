@@ -1,25 +1,43 @@
 #pragma once
 
-#include "Component.h"
-#include "GameObject.h"
-#include <vector>
+#include <string>
 
 class GameData
 {
 public:
     static GameData* createInstance();
-    int getStage();
+
+    void resetRun();
+
+    int getStage() const;
     void setStage(int val);
-    int getLives();
+
+    int getLives() const;
     void setLives(int val);
 
-    void addSnapshot(GameObject* obj);
-    void clearSnapshot();
-    std::vector<GameObject*> getSnapshot();
+    int getScore() const;
+    void setScore(int val);
+    void addScore(int amount);
+
+    float getElapsedTime() const;
+    void setElapsedTime(float seconds);
+    void addElapsedTime(float seconds);
+
+    std::string getResultMessage() const;
+    void setResultMessage(const std::string& message);
+
+    bool getShouldQuit() const;
+    void setShouldQuit(bool value);
+
 private:
     static GameData* myInstance;
+
     int stage;
     int lives;
-    std::vector<GameObject*> snapshot;
+    int score;
+    float elapsedTime;
+    std::string resultMessage;
+    bool shouldQuit;
+
     GameData();
 };
