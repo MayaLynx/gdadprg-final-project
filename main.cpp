@@ -10,7 +10,7 @@
 int main()
 {
     // made it so that Main handles the game loop directly
-    sf::RenderWindow window(sf::VideoMode({500, 500}), "GDADPRG Platformer");
+    sf::RenderWindow window(sf::VideoMode({500, 500}), "GDADPRG_FINALS_OLAY_LIBERATO");
     window.setFramerateLimit(60);
 
     const sf::Time TimePerFrame = sf::seconds(1.0f / 60.0f);
